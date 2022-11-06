@@ -9,19 +9,31 @@
         <meta property="og:image" content="공유할 이미지" />
         <title>잡학다식한 남자의 마이페이지</title>
 
-        <!--로컬 저장소의 폰트 적용을 위해 Style 정의-->
+        <!--
+        로컬 저장소의 폰트 적용을 위해 Style 정의
         <Style>
-        @import {
-        src : url(https://github.com/JeonghwanKim30/MyProfilePage/blob/main/PoorStory-Regular.ttf); 
-        /*특이하게도 디렉토리 구분을 슬래시로 함 (Not 백슬래시)*/
-        font-family: "poor"
-        }
+            @font-face {
+            src : url("C:/VSCODE_TEST/Sparta/PoorStory-Regular.ttf"); 
+            /*특이하게도 디렉토리 구분을 슬래시로 함 (Not 백슬래시)*/
+            font-family: "poor"
+            }
         </Style>
+        -->
+
+        <!--Web Font 가져오기-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+        </style>
+            
 
     <style>
         body{
-            /*Body에 폰트 적용*/
+
+            /*Body에 폰트 적용 (로컬방식으로)
             font-family: "poor";
+            */
+
+            font-family: 'Poor Story', cursive;
 
             /*Body부분 색깔*/
             background-color: rgba(231, 107, 145, 0.966);
